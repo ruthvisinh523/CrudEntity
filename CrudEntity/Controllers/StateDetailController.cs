@@ -1,26 +1,27 @@
 ﻿using CrudEntityRepository.Concreate;
 using CrudEntityRepository.Repository;
 using Microsoft.AspNetCore.Mvc;
+using CrudEntity.BusinessService.Interface;
+using CrudEntity.BusinessService.Concret;
 
 
-    namespace CrudEntity.Controllers
+namespace CrudEntity.Controllers
 {
     public class StateDetailController : Controller
     {
-        private readonly IStateDetailsRepository stateDetailsRepository;
-
+        private readonly IStateService stateService;
         public StateDetailController()
         {
-            stateDetailsRepository = new StateDetailsRepository();
+            stateService = new StateService();
         }
         public IActionResult StateDetail()
         {
-            return View(stateDetailsRepository.GetStateDetails());
+            return View(stateService.GetStateDetails());
         }
 
         public IActionResult Index()
         {
-            return View(stateDetailsRepository.GetStateDetails());
+            return View(stateService.GetStateDetails());
         }
     }
 }

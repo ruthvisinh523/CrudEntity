@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrudEntityRepository\CrudEntityRepository.csproj" />
+    <ProjectReference Include="..\CrudEntity.BusinessEntity\CrudEntity.BusinessEntity.csproj" />
+    <ProjectReference Include="..\CrudEntity.BusinessService\CrudEntity.BusinessService.csproj" />
     <ProjectReference Include="..\DataEntity\DataEntity.csproj" />
   </ItemGroup>
 

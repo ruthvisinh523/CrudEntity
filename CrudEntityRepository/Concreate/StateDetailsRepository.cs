@@ -15,7 +15,7 @@ namespace CrudEntityRepository.Concreate
             context = new CrudContext();
         }
 
-        public StateDetail GetStateDetail(int id)
+        public StateDetail GetStateDetails(int id)
         {
             return context.StateDetails.Find(id);
         }

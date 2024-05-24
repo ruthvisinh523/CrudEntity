@@ -10,4 +10,6 @@ public partial class StateDetail
     public string? StateName { get; set; }
 
     public bool? IsActive { get; set; }
+
+
 }

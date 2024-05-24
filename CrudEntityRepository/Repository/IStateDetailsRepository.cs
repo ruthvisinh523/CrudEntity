@@ -11,7 +11,7 @@ namespace CrudEntityRepository.Repository
     {
         List<StateDetail> GetStateDetails();
 
-        StateDetail GetStateDetail(int id);
+        StateDetail GetStateDetails(int id);
 
     }
 }
